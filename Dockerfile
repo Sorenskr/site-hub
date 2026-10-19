@@ -20,8 +20,8 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/next.config.mjs ./
 
-EXPOSE 3000
-ENV PORT=3000
+EXPOSE 80
+ENV PORT=80
 ENV HOSTNAME=0.0.0.0
 
 CMD ["npm", "start"]
